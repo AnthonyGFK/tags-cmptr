@@ -2,12 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9681315330756035"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <style>
+           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9681315330756035"
      crossorigin="anonymous"></script>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #005bb5;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+
+        }
+        
+    </style>
+    @yield('Styles')
 </head>
+
+
 <body>
-    
-<h1>The site is under development</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+           <section>
+        <h2>TAGS COMPUTERS TECH</h2>
+        <p>The site is new, keep coming back.</p>
+    </section>
+
+        </main>
+        </div>
+
+        <footer>
+        <p>&copy; 2025 Tags Computer Tech. All rights reserved.</p>
+        </footer>
+        @yield('Scripts')   
 </body>
 </html>
